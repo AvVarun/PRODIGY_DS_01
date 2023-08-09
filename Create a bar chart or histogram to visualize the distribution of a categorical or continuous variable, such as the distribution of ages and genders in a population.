@@ -1,0 +1,33 @@
+import matplotlib.pyplot as plt
+
+# Sample data (ages)
+ages = [25, 30, 32, 28, 35, 40, 45, 50, 22, 28, 38, 42, 32, 29, 27, 31, 33, 41, 39, 26]
+
+# Create a histogram
+plt.hist(ages, bins=10, edgecolor='black')
+
+# Add labels and title
+plt.xlabel('Age')
+plt.ylabel('Frequency')
+plt.title('Distribution of Ages in a Population')
+
+# Show the plot
+plt.show()
+import matplotlib.pyplot as plt
+
+# Sample data (genders)
+genders = ['Male', 'Female', 'Male', 'Male', 'Female', 'Female', 'Male', 'Female', 'Male', 'Female']
+
+# Count the occurrences of each gender
+gender_counts = {gender: genders.count(gender) for gender in set(genders)}
+
+# Create a bar chart
+plt.bar(gender_counts.keys(), gender_counts.values())
+
+# Add labels and title
+plt.xlabel('Gender')
+plt.ylabel('Frequency')
+plt.title('Distribution of Genders in a Population')
+
+# Show the plot
+plt.show()
